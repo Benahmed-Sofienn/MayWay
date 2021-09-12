@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "backend": "nodemon server",
+    "backend": "npx nodemon server",
     "frontend": "cd client && npm start",
     "start": "concurrently \"npm run frontend\" \"npm run backend\" "
   },
@@ -21,7 +21,10 @@
   "author": "Ben Ahmed Sofien Abed Arrachid",
   "license": "ISC",
   "dependencies": {
+    "bcrypt": "^5.0.1",
     "express": "^4.17.1",
+    "express-validator": "^6.12.1",
+    "jsonwebtoken": "^8.5.1",
     "mongoose": "^6.0.3"
   },
   "devDependencies": {

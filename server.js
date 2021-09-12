@@ -11,7 +11,11 @@ require("dotenv").config();
 const connectDB = require("./config/connectDB");
 connectDB();
 
+// global middleware
+app.use(express.json())
 
+//router
+app.use('/api/user', require('./routes/user'))
 
 
 
@@ -26,4 +30,4 @@ app.listen(port, (error) =>
 );
 
 
-
+console.clear()
