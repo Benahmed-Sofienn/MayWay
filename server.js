@@ -1,3 +1,4 @@
+
 // require express
 const express = require("express");
 
@@ -10,6 +11,15 @@ require("dotenv").config();
 // connect to DB
 const connectDB = require("./config/connectDB");
 connectDB();
+
+// global middleware
+app.use(express.json())
+
+//router
+app.use('/api/user', require('./routes/user'))
+app.use('/api/comments', require('./routes/comment'))
+app.use('/api/transports', require('./routes/transport'))
+app.use('/api/bann', require('./routes/bann'))
 
 
 
@@ -26,4 +36,4 @@ app.listen(port, (error) =>
 );
 
 
-
+console.clear()
