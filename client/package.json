@@ -14,7 +14,10 @@
     "react-3d-carousels": "^1.0.2",
     "react-bootstrap": "^1.6.1",
     "react-dom": "^17.0.2",
+<<<<<<< HEAD
     "react-elastic-carousel": "^0.11.5",
+=======
+>>>>>>> 0e2a531d39ae815637780e2befef972ed99cfec9
     "react-google-maps": "^9.4.5",
     "react-redux": "^7.2.4",
     "react-router-dom": "^5.2.1",
@@ -50,5 +53,10 @@
       "last 1 safari version"
     ]
   },
+<<<<<<< HEAD
   "proxy": "http://localhost:6000"
+=======
+  "proxy" : "http://localhost:6000"
+>>>>>>> 0e2a531d39ae815637780e2befef972ed99cfec9
 }
+

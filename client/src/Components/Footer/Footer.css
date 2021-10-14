@@ -1,4 +1,5 @@
 footer {
+<<<<<<< HEAD
   margin-top: 2%;
   margin-bottom: 0%;
   padding: 1%;
@@ -25,3 +26,14 @@ footer {
 .footer {
   color: #c2c1a5;
 }
+=======
+padding: 5%;
+}
+.info{
+    display: flex;
+    justify-content: space-around;
+}
+/* .follow {
+    display: flex;
+} */
+>>>>>>> 0e2a531d39ae815637780e2befef972ed99cfec9

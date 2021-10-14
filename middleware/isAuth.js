@@ -4,8 +4,12 @@ const jwt = require("jsonwebtoken");
 const isAuth = async (req, res, next) => {
   try {
     // test token
+<<<<<<< HEAD
     const token = await req.headers["authorization"];
    
+=======
+    const token = req.headers["authorization"];
+>>>>>>> 0e2a531d39ae815637780e2befef972ed99cfec9
     if (!token) {
       return res
         .status(401)
@@ -14,7 +18,11 @@ const isAuth = async (req, res, next) => {
 
     // decode token
     const decoded = jwt.verify(token, process.env.SECRET_KEY);
+<<<<<<< HEAD
     // console.log(decoded); // {id: }
+=======
+    console.log(decoded); // {id: }
+>>>>>>> 0e2a531d39ae815637780e2befef972ed99cfec9
 
     // fetch user with this id
     const userToFind = await User.findOne({ _id: decoded.id });

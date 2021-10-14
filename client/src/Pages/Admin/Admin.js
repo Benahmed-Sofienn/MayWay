@@ -36,11 +36,19 @@ const Admin = ({ history }) => {
         </g>
       </svg>
       <div className="adminLogin">
+<<<<<<< HEAD
         <label className="label">Email</label>
         <input
           id="user"
           type="text"
           className="inputAdminLogin"
+=======
+        <label className="label">User email</label>
+        <input
+          id="user"
+          type="text"
+          className="input"
+>>>>>>> 0e2a531d39ae815637780e2befef972ed99cfec9
           placeholder="Enter your email"
           name="email"
           value={user.email}
@@ -51,7 +59,11 @@ const Admin = ({ history }) => {
         <input
           id="pass"
           type="password"
+<<<<<<< HEAD
           className="inputAdminLogin"
+=======
+          className="input"
+>>>>>>> 0e2a531d39ae815637780e2befef972ed99cfec9
           data-type="password"
           placeholder="Enter your password"
           name="password"
@@ -62,8 +74,12 @@ const Admin = ({ history }) => {
           className="prima"
           type="submit"
           defaultValue="Sign In"
+<<<<<<< HEAD
           style= {{margin: '5%'}}
           onClick={() =>user.email === "admin@mayway.tn" && dispatch( login(user, history))}
+=======
+          onClick={() => dispatch(() => login(user, history))}
+>>>>>>> 0e2a531d39ae815637780e2befef972ed99cfec9
         >
           Login
         </Button>

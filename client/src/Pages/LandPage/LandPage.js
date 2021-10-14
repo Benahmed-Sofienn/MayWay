@@ -1,4 +1,5 @@
 import React from 'react'
+<<<<<<< HEAD
 import Carrousel from '../../Components/Carousel/Carousel'
 
 
@@ -8,10 +9,13 @@ import NavBar from '../../Components/NavBar/NavBar'
 
 import "../LandPage/LandPage.css"
 
+=======
+>>>>>>> 0e2a531d39ae815637780e2befef972ed99cfec9
 
 const LandPage = () => {
     return (
         <div>
+<<<<<<< HEAD
            <div className="accueil">
           <NavBar   landPage={true}/>
           <div className="firstBtn">
@@ -55,6 +59,9 @@ The users can also say whether the road heâ€™s in is blocked, crowded or emptyâ€
       <Carrousel/>
       </div>
     
+=======
+            Home
+>>>>>>> 0e2a531d39ae815637780e2befef972ed99cfec9
         </div>
     )
 }

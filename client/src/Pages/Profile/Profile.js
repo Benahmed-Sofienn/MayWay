@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import NavBar from "../../Components/NavBar/NavBar";
@@ -195,3 +196,23 @@ const Profile = () => {
 };
 
 export default Profile;
+=======
+import React from 'react'
+import {useSelector} from 'react-redux'
+
+const Profile = () => {
+
+const user = useSelector(state => state.userReducer.user)
+
+
+    return (
+        <div>
+            <h4>Name:{user.name}</h4>
+            <h4>Email:{user.email}</h4>
+                        
+        </div>
+    )
+}
+
+export default Profile
+>>>>>>> 0e2a531d39ae815637780e2befef972ed99cfec9

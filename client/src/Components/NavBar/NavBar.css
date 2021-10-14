@@ -1,7 +1,16 @@
 
+<<<<<<< HEAD
 
   .right {
     padding: 14px 16px;
+=======
+.nav-img {
+    width: 268px;
+    height: 33px;
+  }
+  .right {
+    padding: 9px 0px;
+>>>>>>> 0e2a531d39ae815637780e2befef972ed99cfec9
     margin: 0% 12% 0% 0%;
     float: right;
   }
@@ -26,14 +35,22 @@
   .navbar {
     max-width: 100%;
     overflow: hidden;
+<<<<<<< HEAD
     background-color: #001011;
+=======
+    background-color: #fff;
+>>>>>>> 0e2a531d39ae815637780e2befef972ed99cfec9
   }
   .Nave li {
     float: left;
     font-size: 16px;
     color: #ababab;
     text-align: center;
+<<<<<<< HEAD
     padding: 0px 16px;
+=======
+    padding: 14px 16px;
+>>>>>>> 0e2a531d39ae815637780e2befef972ed99cfec9
     text-decoration: none;
   }
   
@@ -46,6 +63,7 @@
     font-size: 16px;
     border: none;
     outline: none;
+<<<<<<< HEAD
     background-color: inherit;
     font-family: inherit;
     margin: 0;
@@ -57,6 +75,17 @@
   
   .dropbtn:hover {
     color: #1890ff;
+=======
+    color: #ababab;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  
+  .navbar li:hover,
+  .dropdown:hover .dropbtn {
+    background-color: #fff;
+>>>>>>> 0e2a531d39ae815637780e2befef972ed99cfec9
   }
   
   .dropdown-content {
@@ -83,6 +112,7 @@
   
   .dropdown:hover .dropdown-content {
     display: block;
+<<<<<<< HEAD
   } 
 
   /*LandPage navBar */
@@ -177,3 +207,6 @@
   .dropdownLP:hover .dropdown-contentLP {
     display: block;
   } 
+=======
+  }
+>>>>>>> 0e2a531d39ae815637780e2befef972ed99cfec9

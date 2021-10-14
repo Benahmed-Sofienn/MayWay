@@ -5,8 +5,13 @@
 }
 body {
   margin: 0;
+<<<<<<< HEAD
   color: #6a6f8c ;
   background: #c8c8c8 !important;
+=======
+  color: #6a6f8c;
+  background: #c8c8c8;
+>>>>>>> 0e2a531d39ae815637780e2befef972ed99cfec9
   font: 600 16px/18px "Open Sans", sans-serif;
 }
 

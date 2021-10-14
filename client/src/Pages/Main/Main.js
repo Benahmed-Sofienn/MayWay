@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React, { useState } from "react";
 
 import Comment from "../../Components/Comment/Comment";
@@ -82,3 +83,17 @@ const Main = () => {
 };
 
 export default Main;
+=======
+import React from 'react'
+import GoogleMap from '../../Components/GoogleMap/GoogleMap'
+
+const Main = () => {
+    return (
+        <div>
+            <GoogleMap/>
+        </div>
+    )
+}
+
+export default Main
+>>>>>>> 0e2a531d39ae815637780e2befef972ed99cfec9

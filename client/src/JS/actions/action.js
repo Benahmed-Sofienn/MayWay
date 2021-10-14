@@ -5,6 +5,7 @@ import {
   USER_SUCC,
   CURRENT_USER,
   LOGOUT,
+<<<<<<< HEAD
   GET_USERS_SUCC,
   GET_USERS_FAIL,
   GET_USERS_LOAD,
@@ -21,6 +22,8 @@ import {
   UNBANN_USER_FAIL,
   GET_BANNED_USERS_SUCC,
   GET_BANNED_USERS_FAIL,
+=======
+>>>>>>> 0e2a531d39ae815637780e2befef972ed99cfec9
 } from "../actionsType/user";
 
 // register
@@ -29,10 +32,18 @@ export const register = (newUser, history) => async (dispatch) => {
   try {
     const result = await axios.post("/api/user/register", newUser);
     dispatch({ type: USER_SUCC, payload: result.data }); //{msg, user , token}
+<<<<<<< HEAD
     history.push("/profile");    
   } catch (error) {
       const errors = error.response.data.errors  
     dispatch({ type: USER_FAIL, payload: {errors} }); //{errors: []} //
+=======
+    history.push("/profile");
+  } catch (error) {
+      const errors = error.response.data.errors
+      errors.map(error => alert(error.msg))
+    dispatch({ type: USER_FAIL, payload: error.response.data }); //{errors: []}
+>>>>>>> 0e2a531d39ae815637780e2befef972ed99cfec9
   }
 };
 
@@ -44,7 +55,11 @@ export const login = (user, history) => async (dispatch) => {
     dispatch({ type: USER_SUCC, payload: result.data }); //{msg, user , token}
     user.email === "admin@mayway.tn"
       ? history.push("/transports")
+<<<<<<< HEAD
       : history.push("/profile");
+=======
+      : history.goBack();
+>>>>>>> 0e2a531d39ae815637780e2befef972ed99cfec9
   } catch (error) {
     dispatch({ type: USER_FAIL, payload: error.response.data }); //{errors: []}
   }
@@ -61,13 +76,18 @@ export const currentUser = () => async (dispatch) => {
     const result = await axios.get("/api/user/current", config);
     dispatch({ type: CURRENT_USER, payload: result.data }); //{user}
   } catch (error) {
+<<<<<<< HEAD
     const token = localStorage.getItem("token");
     token &&  dispatch({ type: USER_FAIL, payload: error.response.data }); //{errors: []}
+=======
+    dispatch({ type: USER_FAIL, payload: error.response.data }); //{errors: []}
+>>>>>>> 0e2a531d39ae815637780e2befef972ed99cfec9
   }
 };
 
 // logout
 export const logout = () => {
+<<<<<<< HEAD
 
   return { type: LOGOUT };
 };
@@ -179,3 +199,7 @@ export const bannUser = (client) => async (dispatch) => {
     dispatch({ type: BANN_USER_FAIL, payload: error.response.data });
   }
 };
+=======
+  return { type: LOGOUT };
+};
+>>>>>>> 0e2a531d39ae815637780e2befef972ed99cfec9

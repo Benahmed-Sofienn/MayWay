@@ -1,13 +1,20 @@
 
 
+<<<<<<< HEAD
  export const USER_LOAD = 'USER_LOAD'
  export const USER_FAIL = 'USER_FAIL'
  export const USER_SUCC = 'USER_SUCC'
+=======
+ export const USER_LOAD = 'LOGIN_LOAD'
+ export const USER_FAIL = 'LOGIN_FAIL'
+ export const USER_SUCC = 'LOGIN_SUCC'
+>>>>>>> 0e2a531d39ae815637780e2befef972ed99cfec9
 
 
  export const CURRENT_USER = 'CURRENT_USER'
 
  export const LOGOUT = 'LOGOUT'
+<<<<<<< HEAD
 
 
  export const GET_USERS_LOAD = "GET_USERS_LOAD";
@@ -37,5 +44,9 @@ export const UNBANN_USER_FAIL = "UNBANN_USER_FAIL";
 export const GET_BANNED_USERS_SUCC = "GET_BANNED_USERS_SUCC";
 export const GET_BANNED_USERS_FAIL = "GET_BANNED_USERS_FAIL";
 
+=======
+ 
+
+>>>>>>> 0e2a531d39ae815637780e2befef972ed99cfec9
 
 

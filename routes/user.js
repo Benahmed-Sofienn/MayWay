@@ -1,5 +1,6 @@
 // require express
 const express = require("express");
+<<<<<<< HEAD
 const {
   register,
   login,
@@ -19,6 +20,15 @@ const {
   validations,
   loginValidator,
 } = require("../middleware/userValidator");
+=======
+const { register, login, current } = require("../controllers/user"); //,transports
+
+
+//require middlewares
+const isAuth = require("../middleware/isAuth");
+const isAdmin = require("../middleware/idAdmin")
+const { registerValidator, validations, loginValidator } = require("../middleware/userValidator");
+>>>>>>> 0e2a531d39ae815637780e2befef972ed99cfec9
 
 //require Router
 const router = express.Router();
@@ -29,7 +39,11 @@ const router = express.Router();
  * @path: /register
  * @data: req.body
  */
+<<<<<<< HEAD
 router.post("/register", registerValidator(), validations, register);
+=======
+router.post('/register', registerValidator(),validations , register)
+>>>>>>> 0e2a531d39ae815637780e2befef972ed99cfec9
 
 /**
  * @desc : login
@@ -37,7 +51,11 @@ router.post("/register", registerValidator(), validations, register);
  * @path: /login
  * @data: req.body
  */
+<<<<<<< HEAD
 router.post("/login", loginValidator(), validations, login);
+=======
+ router.post('/login',loginValidator(),validations, login)
+>>>>>>> 0e2a531d39ae815637780e2befef972ed99cfec9
 
 /**
  * @desc : current user
@@ -45,6 +63,7 @@ router.post("/login", loginValidator(), validations, login);
  * @path: /current
  * @data: no
  */
+<<<<<<< HEAD
 router.get("/current", isAuth, current);
 
 //dadad
@@ -85,5 +104,17 @@ router.put("/:_id", updateOneUser);
 
 
 
+=======
+router.get('/current',isAuth, current)
+
+
+/**
+ * @desc : current user
+ * @method: GET
+ * @path: /transports
+ * @data: no
+//  */
+//  router.get('/transport',isAuth,isAdmin, transports )
+>>>>>>> 0e2a531d39ae815637780e2befef972ed99cfec9
 
 module.exports = router;

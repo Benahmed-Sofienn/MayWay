@@ -10,6 +10,7 @@
     display: flex;
     flex-direction: column;
 
+<<<<<<< HEAD
     height: 250px;
     width: 400px;
     border-radius: 10px;
@@ -27,6 +28,19 @@
     border-radius: 5px;
     padding: 1% 2%;
     margin-bottom: 2%;
+=======
+    height: 300px;
+    width: 400px;
+
+    margin-top: 20px;
+    margin-left: 0;
+    padding: 30px 24px 34px;
+    font-weight: 400;
+    overflow: hidden;
+    background: #fff;
+    border: 1px solid #c3c4c7;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 4%);
+>>>>>>> 0e2a531d39ae815637780e2befef972ed99cfec9
 }
 
 .prima{

@@ -1,4 +1,5 @@
 import React from "react";
+<<<<<<< HEAD
 
 import { Redirect, Route } from "react-router";
 
@@ -39,5 +40,17 @@ else { return <Redirect to="/*" />; }
 
 }
   
+=======
+import { Redirect, Route } from "react-router";
+
+const PrivateRoute = ({ component: Component, ...rest }) => {
+  const token = localStorage.getItem("token");
+  if (!token) {
+    return <Redirect to="/login" />;
+  }
+
+  return <Route component={Component} {...rest} />;
+};
+>>>>>>> 0e2a531d39ae815637780e2befef972ed99cfec9
 
 export default PrivateRoute;

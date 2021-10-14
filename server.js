@@ -14,6 +14,7 @@ connectDB();
 
 // global middleware
 app.use(express.json())
+<<<<<<< HEAD
 
 //router
 app.use('/api/user', require('./routes/user'))
@@ -21,7 +22,11 @@ app.use('/api/comments', require('./routes/comment'))
 app.use('/api/transports', require('./routes/transport'))
 app.use('/api/bann', require('./routes/bann'))
 
+=======
+>>>>>>> 0e2a531d39ae815637780e2befef972ed99cfec9
 
+//router
+app.use('/api/user', require('./routes/user'))
 
 
 
@@ -36,4 +41,8 @@ app.listen(port, (error) =>
 );
 
 
+<<<<<<< HEAD
 console.clear()
+=======
+console.clear()
+>>>>>>> 0e2a531d39ae815637780e2befef972ed99cfec9

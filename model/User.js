@@ -11,10 +11,13 @@ const userSchema = new Schema({
     type: String,
     required: true,
   },
+<<<<<<< HEAD
   imgLink: {
     type: String,
     required: true,
   },
+=======
+>>>>>>> 0e2a531d39ae815637780e2befef972ed99cfec9
   email: {
     type: String,
     required: true,
@@ -24,6 +27,7 @@ const userSchema = new Schema({
     type: String,
     required: true,
   },
+<<<<<<< HEAD
   adresse: {
     type: String,
     
@@ -52,6 +56,9 @@ const userSchema = new Schema({
     type: String,
     
   },
+=======
+  phone: Number,
+>>>>>>> 0e2a531d39ae815637780e2befef972ed99cfec9
 });
 
 module.exports = User = mongoose.model("user", userSchema);

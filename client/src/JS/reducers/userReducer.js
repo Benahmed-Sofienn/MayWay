@@ -4,6 +4,7 @@ import {
   USER_FAIL,
   USER_LOAD,
   USER_SUCC,
+<<<<<<< HEAD
   ADD_USER_FAIL,
   DELETE_USER_FAIL,
   EDIT_USER_FAIL,
@@ -19,16 +20,23 @@ import {
   UNBANN_USER_FAIL,
   GET_BANNED_USERS_SUCC,
   GET_BANNED_USERS_FAIL,
+=======
+>>>>>>> 0e2a531d39ae815637780e2befef972ed99cfec9
 } from "../actionsType/user";
 
 const initState = {
   user: {},
   load: false,
+<<<<<<< HEAD
   isAuth: false,
   usersList: [],
   blackList: [],
   errors: [],
   edit: false,
+=======
+  errors: [],
+  isAuth: false,
+>>>>>>> 0e2a531d39ae815637780e2befef972ed99cfec9
 };
 
 const userReducer = (state = initState, { type, payload }) => {
@@ -36,6 +44,7 @@ const userReducer = (state = initState, { type, payload }) => {
     case USER_LOAD:
       return { ...state, load: true };
     case USER_SUCC:
+<<<<<<< HEAD
       localStorage.setItem("token", payload.token);
       localStorage.setItem("email", payload.user.email);
 
@@ -90,6 +99,17 @@ const userReducer = (state = initState, { type, payload }) => {
         case BANN_USER_FAIL:
           return { ...state, errors: payload };
 
+=======
+      localStorage.setItem('token',payload.token)
+      return { ...state, load: false, user: payload.user , isAuth: true};
+    case USER_FAIL:
+      return { ...state, load: false, errors: payload.errors , isAuth: false};
+    case CURRENT_USER:
+      return {...state, user: payload, load: false,  isAuth: true}
+    case LOGOUT: 
+    localStorage.removeItem('token')
+      return {...state, user: {}, load: false , errors: [] , isAuth: false}
+>>>>>>> 0e2a531d39ae815637780e2befef972ed99cfec9
     default:
       return state;
   }
